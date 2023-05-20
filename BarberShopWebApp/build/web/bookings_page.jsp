@@ -91,7 +91,7 @@ https://templatemo.com/tm-585-barber-shop
                                         <br>
                                         <a class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-2 mb-2" href="#section_2">Promo</a>
 
-                                        <a class="btn custom-btn smoothscroll mb-2" href="#section_3">What we do</a>
+                                        <a class="btn custom-btn smoothscroll mb-2" href="#section_3">Click here to Book</a>
                                     </div>
                                 </div>
                             </div>
