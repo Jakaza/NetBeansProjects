@@ -35,9 +35,8 @@ public class UserLoginServlet extends HttpServlet {
         // save user to session
         // Go to main page
         
-//        RequestDispatcher requestDispatcher = request.getRequestDispatcher("bookings_page.jsp");
-        
-//        requestDispatcher.forward(request, response);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("bookings_page.jsp");  
+        requestDispatcher.forward(request, response);
 
     }
 }

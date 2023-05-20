@@ -74,27 +74,27 @@ https://templatemo.com/tm-585-barber-shop
 
                             <div class="container mt-5">
                                 <h3 class="pb-5">Create new account</h3>
-                                <form class="row g-3 col-md-6" >
+                                <form action="UserRegisterServlet.do" class="row g-3 col-md-6" >
                                     <div class="mb-3">
                                         <label for="firstname" class="form-label">Firstname : </label>
-                                        <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+                                        <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Firstname">
                                       </div>
                                       <div class="mb-3">
                                         <label for="surname" class="form-label">Surname : </label>
-                                        <input type="text" class="form-control" id="surname" placeholder="Surname">
+                                        <input name="surname" type="text" class="form-control" id="surname" placeholder="Surname">
                                       </div>
                                       <div class="mb-3">
                                         <label for="email" class="form-label">Email : </label>
-                                        <input type="text" class="form-control" id="email" placeholder="Email">
+                                        <input name="email" type="text" class="form-control" id="email" placeholder="Email">
                                       </div>
                                       <div class="mb-3">
                                         <label for="age" class="form-label">Age : </label>
-                                        <input type="number" class="form-control" id="age" placeholder="Age">
+                                        <input name="age" type="number" class="form-control" id="age" placeholder="Age">
                                       </div>
 
                                       <div class="mb-3">
                                         <label for="age" class="form-label">Gender : </label>
-                                        <select class="form-select" aria-label="" >
+                                        <select name="gender" class="form-select" aria-label="" >
                                             <option selected>Select Gender</option>
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
@@ -103,7 +103,7 @@ https://templatemo.com/tm-585-barber-shop
 
                                       <div class="mb-3">
                                         <label for="password" class="form-label">Password : </label>
-                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                        <input name="password" type="password" class="form-control" id="password" placeholder="Password">
                                       </div>
 
 
