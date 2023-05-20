@@ -63,7 +63,7 @@ https://templatemo.com/tm-585-barber-shop
 
                             <li class="nav-item">
                                 <p>Already have an account? </p>
-                                <a class="nav-link click-scroll" href="login.jsp.html">Login</a>
+                                <a class="nav-link click-scroll" href="user_login.jsp">Login</a>
                             </li>
                         </ul>
                     </div>
@@ -103,7 +103,7 @@ https://templatemo.com/tm-585-barber-shop
 
                                       <div class="mb-3">
                                         <label for="password" class="form-label">Password : </label>
-                                        <input type="number" class="form-control" id="password" placeholder="Password">
+                                        <input type="password" class="form-control" id="password" placeholder="Password">
                                       </div>
 
 

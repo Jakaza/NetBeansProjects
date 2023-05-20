@@ -58,7 +58,7 @@ https://templatemo.com/tm-585-barber-shop
 
                             <li class="nav-item">
                                 <p>Don't have an account? create one</p>
-                                <a class="nav-link click-scroll" href="register.html">Register</a>
+                                <a class="nav-link click-scroll" href="user_register.jsp">Register</a>
                             </li>
                         </ul>
                     </div>
@@ -77,7 +77,7 @@ https://templatemo.com/tm-585-barber-shop
 
                                       <div class="mb-3">
                                         <label for="password" class="form-label">Password : </label>
-                                        <input type="number" class="form-control" id="password" placeholder="Password">
+                                        <input type="password" class="form-control" id="password" placeholder="Password">
                                       </div>
 
 
