@@ -4,6 +4,16 @@
     Author     : Student
 --%>
 
+<%
+    String email = (String)session.getAttribute("user_email");
+    
+//    if(email == null){
+//        RequestDispatcher disp = request.getRequestDispatcher("user_login.jsp");
+//        disp.forward(request, response);
+//    }
+%>
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -57,7 +67,7 @@ https://templatemo.com/tm-585-barber-shop
 
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                                <a class="nav-link click-scroll" href="#section_1">Profile</a>
                             </li>
 
                             <li class="nav-item">
@@ -91,7 +101,7 @@ https://templatemo.com/tm-585-barber-shop
                                         <br>
                                         <a class="btn custom-btn custom-border-btn custom-btn-bg-white smoothscroll me-2 mb-2" href="#section_2">Promo</a>
 
-                                        <a class="btn custom-btn smoothscroll mb-2" href="#section_3">Click here to Book</a>
+                                        <a class="btn custom-btn smoothscroll mb-2" href="#booking-section">Click here to Book</a>
                                     </div>
                                 </div>
                             </div>
