@@ -1,13 +1,15 @@
-<!doctype html>
-<html lang="en">
+<%-- 
+    Document   : user_login
+    Created on : 20 May 2023, 1:36:50 PM
+    Author     : Student
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <title>Gentlemen's Barber Shop - HTML CSS Template</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Gentlemen's Barber Shop - HTML CSS Template</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,7 +68,7 @@ https://templatemo.com/tm-585-barber-shop
                             
                             <div class="container mt-5">
                                 <h3 class="pb-5">Login Into Your Account</h3>
-                                <form class="row g-3 col-md-6" >
+                                <form class="row g-3 col-md-6"   action="UserLoginServlet.do" method="POST">
 
                                       <div class="mb-3">
                                         <label for="email" class="form-label">Email : </label>
@@ -101,6 +103,5 @@ https://templatemo.com/tm-585-barber-shop
         <script src="js/bootstrap.min.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
-
     </body>
 </html>
