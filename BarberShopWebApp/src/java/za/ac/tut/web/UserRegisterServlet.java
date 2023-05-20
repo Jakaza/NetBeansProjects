@@ -35,7 +35,7 @@ public class UserRegisterServlet extends HttpServlet {
         
         
         Person person = createPerson(firstname,surname,gender,email,password,age);
-        
+        //create new person
         
         
         

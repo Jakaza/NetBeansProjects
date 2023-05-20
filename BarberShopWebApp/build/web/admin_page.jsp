@@ -1,6 +1,13 @@
-<!doctype html>
-<html lang="en">
-    <head>
+<%-- 
+    Document   : admin_page
+    Created on : 21 May 2023, 1:13:18 AM
+    Author     : Jakaza G Chauke
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
