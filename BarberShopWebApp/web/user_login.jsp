@@ -25,6 +25,9 @@
         <link href="css/templatemo-barber-shop.css" rel="stylesheet">
 
         <link rel="stylesheet" href="/css/index.css">
+        
+        <script src="path/to/sweetalert.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!--
 
 TemplateMo 585 Barber Shop
@@ -35,6 +38,8 @@ https://templatemo.com/tm-585-barber-shop
     </head>
     
     <body>
+        
+        <% String error = request.getParameter("error"); %>
 
         <div class="container-fluid">
             <div class="row">
@@ -68,6 +73,18 @@ https://templatemo.com/tm-585-barber-shop
                             
                             <div class="container mt-5">
                                 <h3 class="pb-5">Login Into Your Account</h3>
+                                
+                                    <% if (error != null && error.equals("true")) { %>
+                                    <script>
+                                         // Display the SweetAlert error message
+                                        Swal.fire({
+                                            text: 'Invalid username or password. Please try again.',
+                                            confirmButtonText: 'Ok'
+                                        })
+                                    </script>
+                                    <% } %>
+                                
+                                
                                 <form class="row g-3 col-md-6"   action="UserLoginServlet.do" method="POST">
 
                                       <div class="mb-3">

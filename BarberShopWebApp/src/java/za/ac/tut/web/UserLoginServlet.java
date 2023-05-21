@@ -35,8 +35,20 @@ public class UserLoginServlet extends HttpServlet {
         // save user to session
         // Go to main page
         
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("bookings_page.jsp");  
-        requestDispatcher.forward(request, response);
+//        String url = "bookings_page.jsp";
+        
+        
+        
+        if (email == null) {
+            // Redirect to a success page or homepage
+            response.sendRedirect("user_login.jsp?error=true");
+        } else {
+            // Invalid credentials, redirect back to the login page with an error message
+            response.sendRedirect("bookings_page.jsp");
+        }
+//        
+//        RequestDispatcher requestDispatcher = request.getRequestDispatcher(url);  
+//        requestDispatcher.forward(request, response);
 
     }
 }

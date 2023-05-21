@@ -30,6 +30,7 @@
         <link href="css/templatemo-barber-shop.css" rel="stylesheet">
 
         <link rel="stylesheet" href="/css/index.css">
+        
 <!--
 
 TemplateMo 585 Barber Shop
@@ -40,6 +41,8 @@ https://templatemo.com/tm-585-barber-shop
     </head>
     
     <body>
+        
+
 
         <div class="container-fluid">
             <div class="row">
