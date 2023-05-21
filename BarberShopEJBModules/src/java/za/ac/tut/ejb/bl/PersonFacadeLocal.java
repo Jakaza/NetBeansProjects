@@ -25,7 +25,7 @@ public interface PersonFacadeLocal {
     Person find(Object id);
     
     Person find(String email);
-    
+
     List<Person> findAll();
 
     List<Person> findRange(int[] range);

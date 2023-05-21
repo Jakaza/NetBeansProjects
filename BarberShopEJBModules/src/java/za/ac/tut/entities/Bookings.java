@@ -13,8 +13,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
 
 /**
  *
@@ -27,14 +27,86 @@ public class Bookings implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
+     private String name;
     private String contacts;
     private Time time;
     private Date date;
     private Integer numPeople;
+    @Temporal(javax.persistence.TemporalType.TIMESTAMP)
+    private Date creationDate;
     @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name = "Person_ID")
     private Person person;
+    
+
+    public Bookings() {
+    }
+
+    public Bookings(Long id, String name, String contacts, Time time, Date date, Integer numPeople, Date creationDate, Person person) {
+        this.id = id;
+        this.name = name;
+        this.contacts = contacts;
+        this.time = time;
+        this.date = date;
+        this.numPeople = numPeople;
+        this.creationDate = creationDate;
+        this.person = person;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(String contacts) {
+        this.contacts = contacts;
+    }
+
+    public Time getTime() {
+        return time;
+    }
+
+    public void setTime(Time time) {
+        this.time = time;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Integer getNumPeople() {
+        return numPeople;
+    }
+
+    public void setNumPeople(Integer numPeople) {
+        this.numPeople = numPeople;
+    }
+
+    public Date getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
 
     public Long getId() {
         return id;

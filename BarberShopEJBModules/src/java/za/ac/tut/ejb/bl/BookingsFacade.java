@@ -17,7 +17,7 @@ import za.ac.tut.entities.Bookings;
 @Stateless
 public class BookingsFacade extends AbstractFacade<Bookings> implements BookingsFacadeLocal {
 
-    @PersistenceContext(unitName = "BarberShopEJBModulePU")
+    @PersistenceContext(unitName = "BarberShopEJBModulesPU")
     private EntityManager em;
 
     @Override

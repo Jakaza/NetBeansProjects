@@ -18,7 +18,7 @@ import za.ac.tut.entities.Person;
 @Stateless
 public class PersonFacade extends AbstractFacade<Person> implements PersonFacadeLocal {
 
-    @PersistenceContext(unitName = "BarberShopEJBModulePU")
+    @PersistenceContext(unitName = "BarberShopEJBModulesPU")
     private EntityManager em;
 
     @Override
@@ -36,6 +36,7 @@ public class PersonFacade extends AbstractFacade<Person> implements PersonFacade
         query.setParameter("email", email);
         Person person = (Person) query.getSingleResult();
         return person;
+        
     }
     
 }
