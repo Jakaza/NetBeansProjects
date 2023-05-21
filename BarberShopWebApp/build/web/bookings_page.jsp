@@ -83,7 +83,7 @@ https://templatemo.com/tm-585-barber-shop
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                                <a class="nav-link click-scroll" href="UserLogoutServlet.do">Log-out</a>
                             </li>
                         </ul>
                     </div>
